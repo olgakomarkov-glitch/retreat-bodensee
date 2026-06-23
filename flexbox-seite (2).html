@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Content Creator Retreat – Flexbox</title>
+  <meta name="description" content="Content Creator Retreat am Bodensee – Flexbox Übungsseite">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Design CSS -->
+  <link rel="stylesheet" href="css/design.css">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #333;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .container {
+      background: #fff;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1em;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 10px;
+      border-radius: 6px;
+    }
+
+    /* ===== CONTENT ===== */
+    .content {
+      display: flex;
+      flex-direction: column; /* ← ОДИНАКОВО для мобилки */
+      gap: 1.5em;
+    }
+
+    .main {
+      background: #fff;
+    }
+
+    .days-12 {
+      background: #f0f3f5;
+    }
+
+    .days-34 {
+      background: #daedc1;
+    }
+
+    .block {
+      padding: 1em;
+    }
+
+    /* ===== DESKTOP ===== */
+    @media (min-width: 800px) {
+      .content {
+        flex-direction: column; /* порядок НЕ меняем */
+      }
+
+      .days-grid {
+        display: flex;
+        gap: 1em;
+      }
+
+      .days-12,
+      .days-34 {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="images/start/logo-bodensee.jpg" alt="Bodensee Retreats Logo" class="site-logo">
+
+      <nav class="main-nav">
+        <a href="index.html">Start</a>
+        <a href="fruehling-am-bodensee.html">Frühling am Bodensee</a>
+        <a href="bachelorette-am-bodensee.html">Bachelorette am Bodensee</a>
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="kontakt.html">Kontaktformular</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <article class="main block">
+		<h1>Content Creator Retreat – Dein perfekter Social-Media-Start am Bodensee</h1>
+	  
+		<p>
+		  Verbringe vier unvergessliche Tage am Bodensee und erhalte professionellen, hochwertigen Content
+		  für all deine Social-Media-Kanäle. 
+		</p>
+	  
+		<p>
+		  Wir zeigen dir, wie du natürlich und selbstbewusst vor der Kamera posierst, wie du sicher vor der Kamera sprichst,
+		  wie du ästhetische Reels, TikToks, Shorts und Stories produzierst – und wir erstellen dein perfektes LinkedIn-Foto
+		  und deinen professionellen Personal-Brand-Look.
+		</p>
+	
+
+      <img src="images/fruehling/fruehling-bodensee-6.jpg" alt="Bodensee Stimmung">
+    </article>
+
+    <!-- 2️⃣ + 3️⃣ ДНИ -->
+    <div class="days-grid">
+
+      <!-- TAG 1 + 2 -->
+      <section class="days-12 block">
+        <h2>Tag 1 – Ankunft & Content-Start</h2>
+        <p>Anreise und persönliches Kennenlernen in einer kleinen, inspirierenden Gruppe.</p>
+			
+			<ul>
+			  <li>Definition deiner Blogging-Richtung: Lifestyle, Travel, Beauty, Business, Personal Brand</li>
+			  <li>Entwicklung deines individuellen Content-Plans</li>
+			  <li>Erste Foto- und Videoformate: „Vorstellung als Creator“</li>
+			  <li>Praxis: Kamerasicherheit, Ausdruck, leichte Posen</li>
+			  <li>Sprechübungen für Stories &amp; Reels</li>
+			</ul>
+        <img src="images/fruehling/fruehling-bodensee-1.jpg">
+
+        <h2>Tag 2 – Meersburg</h2>
+        <p>Ein Tag in Meersburg, einer der schönsten Städte am Bodensee. Enge Gassen,
+			Weinberge, Aussichtsterrassen und eindrucksvolle Kulissen prägen diesen Tag.</p>
+			<p>
+				Im Fokus stehen die zwei Schlösser von Meersburg:
+				</p>
+				
+				<ul>
+				  <li><strong>Altes Schloss Meersburg</strong> – eine der ältesten bewohnten Burgen Deutschlands mit historischen Räumen und Blick auf den See</li>
+				  <li><strong>Neues Schloss Meersburg</strong> – barocke Säle, elegante Treppen und Panorama über den Bodensee</li>
+				</ul>
+				
+				<ul>
+				  <li>Professionelles Fotoshooting in beiden Schlössern</li>
+				  <li>Videocontent: Reels &amp; TikToks im Travel- und Lifestyle-Look</li>
+				  <li>Hochwertige Portraits und ästhetische Serien</li>
+				  <li>Erstellung deiner ersten visuellen Story</li>
+				</ul>
+
+
+        <img src="images/fruehling/fruehling-bodensee-3.jpg">
+      </section>
+
+      <!-- TAG 3 + 4 -->
+      <section class="days-34 block">
+        <h2>Tag 3 – Insel Mainau</h2>
+        <p>Fashion-, Lifestyle- und Travel-Shootings.</p>
+		<p>
+			Einer der magischsten Orte Deutschlands – perfekt für visuelles Storytelling
+			und ästhetischen Content in außergewöhnlicher Kulisse.
+			</p>
+			
+			<ul>
+			  <li>Schmetterlingshaus: High-Fashion-Fotokonzept mit weichem Licht und exotischem Ambiente</li>
+			  <li>Italienischer Garten, Palmenallee und üppige Blütenlandschaften</li>
+			  <li>Fashion-, Lifestyle- und Travel-Shooting</li>
+			  <li>Videoformate: „Day on the Island“, Aesthetic-Clips, POV-Reels</li>
+			</ul>
+        <img src="images/fruehling/fruehling-bodensee-5.jpg">
+
+        <h2>Tag 4 – Coaching & Personal Branding</h2>
+        <p>Positionierung, Content-System, Strategie für die nächsten 30 Tage.</p>
+		<p>
+			Der letzte Tag steht im Zeichen der Auswertung, Klarheit und strategischen
+			Ausrichtung für deine nächsten Schritte.
+			</p>
+			
+			<ul>
+			  <li>Analyse deines Stils, deiner Nische und deiner Zielgruppe</li>
+			  <li>Aufbau deines Content-Systems und Posting-Rhythmus</li>
+			  <li>Souveränes Sprechen vor der Kamera: Story- und Video-Training</li>
+			  <li>Auswertung deines gesamten Retreat-Contents</li>
+			  <li>Erstellung einer klaren Personal-Brand-Strategie für die nächsten 30 Tage</li>
+			</ul>
+        <img src="images/fruehling/fruehling-bodensee-8.jpg">
+      </section>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Bodensee Retreats</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
